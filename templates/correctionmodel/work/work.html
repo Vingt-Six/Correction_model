@@ -1,0 +1,20 @@
+{% extends 'correctionmodel/base.html' %}
+
+{% block content %}
+<h1>Je suis la page Work</h1>
+<section>
+    {% for item in engineer %}
+    <p>{{ item.name }} {{ item.work }}</p>
+    {% endfor %}
+</section>
+<section>
+    {% for item in devs %}
+    <p>{{ item.name }} {{ item.age }} {{ item.work }}</p>
+    {% endfor %}
+</section>
+<section>
+    {% for item in p1991 %}
+    <p>{{ item.name }} {{ item.birthday_date }}</p>
+    {% endfor %}
+</section>
+{% endblock content %}
